@@ -3,49 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>About Us</title>
+
+  <link rel="stylesheet" href="./travel_recommendation.css">
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
-      margin: 0;
-      padding: 0;
-    }
 
-    nav {
-      background-color: #4CAF50;
-      padding: 15px;
-      color: white;
-    }
+    
+   
 
-    nav h1 {
-      display: inline;
-      margin-right: 20px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: inline;
-    }
-
-    nav ul li {
-      display: inline;
-      margin-right: 15px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
 
     .about-section {
       padding: 40px;
       text-align: center;
+      color : white;
     }
 
     .about-section h1 {
       font-size: 36px;
-      color: #333;
+      color: white;
       margin-bottom: 20px;
     }
 
@@ -54,7 +29,7 @@
       margin: 0 auto;
       line-height: 1.6;
       font-size: 16px;
-      color: #555;
+      color: white;
     }
 
     .team-section {
@@ -90,7 +65,7 @@
     }
 
     .member button {
-      background-color: #4CAF50;
+      background-color: #2D336B;
       border: none;
       padding: 8px 16px;
       color: white;
@@ -100,33 +75,35 @@
     }
 
     .member button:hover {
-      background-color: #388e3c;
+      background-color: #2D336B;
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <h1>Travel Recommendation</h1>
+  <nav><h1>Travel Recommendation</h1>
     <ul>
-      <li><a href="./Home.html" id="home">Home</a></li>
-      <li><a href="./About_us.html" id="about">About Us</a></li>
-      <li><a href="./health_contact.html" id="contact">Contact Us</a></li>
+      <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+      <li><a href="./About_Us.html" id="about">About  </a></li>
+      <li><a href="./Contact_Us.html" id="contact">Contact Us </a></li>
+      <li><input type="text" id="destinationInput" placeholder="Enter a destination or Keyword">  </li>
+      <li><button id='btnSearch'>Search</button>
+        <li><button id='btnReset'>Reset</button>
+      </li>
+    
     </ul>
-  </nav>
-
+    </nav>
   <section class="about-section">
     <h1>About Us</h1>
     <p>
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-      literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
-      College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-      and going through the cites of the word in classical literature, discovered the undoubtable source.
+        Our mission is simple: to inspire and empower travelers by providing carefully curated recommendations, from iconic landmarks to hidden gems. Whether you're seeking adventure, relaxation, culture, or cuisine, we’re here to help you explore with confidence and excitement.
+
+        At Travel Recommendation, we believe that travel is more than just a journey — it's a gateway to understanding new cultures, making lifelong memories, and expanding your perspective. Our dedicated team of travel enthusiasts works tirelessly to bring you the best insights, tips, and destination highlights to make every trip unforgettable.
     </p>
   </section>
 
   <section class="team-section">
-    <h2>Meet Our Team</h2>
+    <h2 style="color: white;">Meet Our Team</h2>
     <div class="team-members">
       <div class="member">
         <p><strong>About Us</strong></p>
