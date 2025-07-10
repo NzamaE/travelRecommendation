@@ -28,14 +28,14 @@ nav {
     font-weight: bold;
   }
   
-  /* Basic CSS for the form elements */
-  body {
-    font-family: Arial, sans-serif;
-    /* margin: 20px; */
-   background-image: url("https://r4.wallpaperflare.com/wallpaper/541/56/14/cape-town-table-mountain-south-africa-sea-wallpaper-0b6c406b337c750f2cd88d9206f16353.jpg");
-
-    background-repeat: no-repeat;
-    background-size: 1800px 750px;  
+body {
+  font-family: Arial, sans-serif;
+  background-image: 
+    linear-gradient(to left, rgba(255, 0, 0, 0), #2D336B),
+    url("https://r4.wallpaperflare.com/wallpaper/541/56/14/cape-town-table-mountain-south-africa-sea-wallpaper-0b6c406b337c750f2cd88d9206f16353.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
   
   h1 {
@@ -60,14 +60,14 @@ nav {
   
   button {
     padding: 7px 15px;
-    background-color: #4CAF50;
+    background-color: #2D336B;
     color: white;
     border: none;
     cursor: pointer;
   }
   
   button:hover {
-    background-color: #45a049;
+    background-color: #2D336B;
   }
   
   /* Basic CSS for the report section */
@@ -93,3 +93,43 @@ nav {
     height: 100px;
   }
   
+
+  #mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 50px;
+}
+
+/* Intro styling */
+#intro {
+  width: 40%;
+  color: white;
+}
+
+#intro h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#intro p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+}
+
+/* Result box updated */
+#result {
+  height: auto;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+}

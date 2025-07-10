@@ -8,27 +8,58 @@
         body{
             text-align: center;
         }
-        /* Some basic styling for demonstration purposes */
-        #contactForm {
-          max-width: 400px;
-          margin: 0 auto;
-        }
-        #contactForm input,
-        #contactForm textarea {
-          width: 100%;
-          margin-bottom: 15px;
-          padding: 8px;
-        }
-        #contactForm button {
-          padding: 10px 20px;
-          background-color: #007bff;
-          color: white;
-          border: none;
-          cursor: pointer;
-        }
-        #contactForm button:hover {
-          background-color: #0056b3;
-        }
+        .contact-container {
+      max-width: 500px;
+      background-color: white;
+      padding: 30px;
+      margin: 40px auto;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+
+    .contact-container h1 {
+      margin-bottom: 10px;
+      font-size: 28px;
+      color:2D336B;
+    }
+
+    .contact-container p {
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    #contactForm label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    #contactForm input,
+    #contactForm textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    #contactForm button {
+      background-color: #2D336B;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #contactForm button:hover {
+      background-color: #2D336B;
+    }
       </style>
 
 
@@ -46,33 +77,43 @@
         </ul>
         </nav>
 <div>
+
+
+    <div id="mainContainer">
+        <div id="intro">
+          <h2>Contact Us</h2>
+          <p>Stay in touch.</p>
+        </div>
+        <div>
+            <div class="contact-container">
+                <h1>Contact Us</h1>
+                <p>Feel free to reach out to us using the form below.</p>
+            
+                <form id="contactForm">
+                  <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                  </div>
+                  <button type="submit" onclick="thankyou()">Submit</button>
+                </form>
+              </div>
+            </div>
+        </div>
+      </div>
     <div>
         <h1>Contact Us</h1>
         <p>Feel free to contact us.</p>
       
     </div>
-    <div>
-     
-  <form id="contactForm">
-    <div>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    
-    <div>
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-    </div>
-    <button type="submit" onclick="thankyou()">Submit</button>
-  </form>
-    </div>
-
-
-</div>
+   
 
 </body>
 </html>
